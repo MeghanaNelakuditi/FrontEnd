@@ -1,0 +1,86 @@
+<html>
+	<head>
+	<link rel = "stylesheet" type = "text/css" href = "../css/style.css">
+		<title>
+			Customer Sign Up Form
+		</title>
+		<script src="../js/Signup.js"></script>
+	</head>
+	<body>
+		<div align="center">
+		<img src="../images/Eficens.jpeg" alt="Eficens Logo" width="200" height="100"><br><br>
+		<a href="Home.html">Home</a>&nbsp;&nbsp;&nbsp;
+		<a href="login.html">Login</a>
+		<div id="successMessage"></div><br>
+		<div id="errors"></div><br>
+		
+		<form id="signUpFrom">
+		<table border="1" style="background-color: green">
+			<tr>
+			<td><label for="fname">First name:</label><br></td>
+			<td><input type="text" id="fname" name="fname"><br></td>
+			</tr>
+			<tr>
+			<td><label for="lname">Last name:</label><br></td>
+			<td><input type="text" id="lname" name="lname"><br></td>
+			</tr>
+			<tr>
+			<td><label for="dob">Date Of Birth:</label><br></td>
+			<td><input type="date" id="dob" name="dob"><br></td>
+			</tr>
+			<tr>
+			<td><label for="email">Email Id:</label><br></td>
+			<td><input type="text" id="email" name="email"><br></td>
+			</tr>
+			<tr>
+			<td><label for="phone">Phone Number:</label><br></td>
+			<td><input type="text" id="phone" name="phone"><br></td>
+			</tr>
+			<tr>
+			<td><h3>Select Gender</h3></td>
+			<td>
+				 <input type="radio" name="Gender" id="female"  />Female
+                 <input type="radio" name="Gender" id="male"  />Male
+			</td>
+			</tr>
+			<tr>
+			<td><h3>Interested In Buy</h3></td>
+			<td><input type="checkbox" id="cloths" name="cloths" value="Cloths">
+			<label for="cloths"> Cloths</label><br>
+			<input type="checkbox" id="electronics" name="electronics" value="Electronics">
+			<label for="electronics"> Electronics</label><br>
+			<input type="checkbox" id="books" name="books" value="Books">
+			<label for="books"> Books</label><br><br></td>
+			</tr>
+			<tr>
+			<td><label for="country">Choose your home Country</label><br></td>
+			<td><select name="country" id="country">
+				<option value="">Select Country</option>
+				<option value="USA">USA</option>
+				<option value="Nepal">Nepal</option>
+				<option value="Sri Lanka">Sri Lanka</option>
+				<option value="India">India</option>
+				<option value="Pakistan">Pakistan</option></td>
+			</select><br><br>
+			</tr>
+			<tr>
+			<td><label for="password">Password:</label><br></td>
+			<td><input type="password" id="password" name="password"><br></td>
+			</tr>
+			<tr>
+			<td><label for="confirmPassword">Confirm Password:</label><br></td>
+			<td><input type="password" id="confirmPassword" name="confirmPassword"><br><br><br></td>
+			</tr>
+			<tr>
+			<td><label for="shippingAddress">Shipping Address:</label><br></td>
+			<td><textarea id="shippingAddress" rows="5" cols="30" name="shippingAddress"></textarea><br><br><br></td>
+			</tr>
+			<tr>
+			<td><button type="button" onclick="validateForm();">Sign Up</button></td>
+			<td><input type="button" onclick="confirmClearFields();" value="Clear All Fields"></td>
+			</tr>
+			</table>
+		</form>
+		</div>
+	</body>
+</html>

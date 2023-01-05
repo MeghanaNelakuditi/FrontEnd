@@ -1,0 +1,11 @@
+
+body {
+    background-color :orange;
+    color: #FFFFFF;
+}
+
+.table,th,td {
+	border:10;
+	border-color: lightskyblue;
+}
+

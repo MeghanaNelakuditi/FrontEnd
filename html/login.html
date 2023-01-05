@@ -1,0 +1,39 @@
+<html>
+<head>
+<link rel = "stylesheet" type = "text/css" href = "../css/style.css">
+<script src="../js/login.js"></script>
+</head>
+<body>
+		<div align="center">
+		<table>
+		<tr><td><img src="../images/Eficens.jpeg" alt="alternatetext"></td></tr>
+		<tr><td><b><a href="Home.html">Home</a></b></td>
+		<td><b><a href="Signup.html">Signup</a></b></tr>
+		</table>
+		<form onsubmit="return validateLoginForm();" method="POST" action="product.html">
+        <table border="1" style="background-color: green">
+				
+                <tr>
+                        <td><b>Email: <sup style="color: red">*</sup></b></td>
+                        <td>
+                            <input type="email"/>
+                        </td>
+                </tr>
+                <tr>
+                    <td><b>Password: <sup style="color: red">*</sup></b></td>
+                    <td><input type="password" maxlength="15" required /></td>
+                </tr>
+               <tr>
+                    <td></td>
+                    <td>
+                        <button type="submit">Login</button>
+                        <button onclick="clearAllTheFields();">Clear</button>
+                    </td>
+                </tr>
+                
+            
+            </table>
+			</form>
+			</div>
+</body>
+</html>
